@@ -29,9 +29,6 @@ plt.scatter(features[:,2], features[:,3], c=predicao,marker='d',cmap='viridis',s
 plt.scatter(features[:,2], features[:,3], c=target,marker='o',cmap='viridis',s=15)
 
 
-
-
-
 pca = PCA(n_components=2, whiten=True, svd_solver='randomized')
 pca = pca.fit(features)
 pca_features = pca.transform(features)
